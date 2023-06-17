@@ -1,8 +1,10 @@
-2. Create a Google Apps Script
+Create a Google Apps Script
 Click on Tools > Script Editor… which should open a new tab.
 Rename it Submit Form to Google Sheets. Make sure to wait for it to actually save and update the title before editing the script.
 Now, delete the function myFunction() {} block within the Code.gs tab.
 Paste the following script in it's place and File > Save:
+
+
 var sheetName = 'Sheet1'
 var scriptProp = PropertiesService.getScriptProperties()
 
@@ -43,8 +45,6 @@ function doPost (e) {
     lock.releaseLock()
   }
 }
-
-
 
 
 If you want to better understand what this script is doing, checkout the form-script-commented.js file in the repo for a detailed explanation.
